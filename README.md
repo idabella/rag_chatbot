@@ -29,35 +29,29 @@ An intelligent chatbot built with **Retrieval-Augmented Generation (RAG)** techn
 
 ### 3-Tier Architecture
 ```
-┌─────────────────────┐    ┌─────────────────────┐    ┌─────────────────────┐
-│   React Frontend    │    │   FastAPI Backend   │    │   Vector Database   │
-│   TypeScript/Vite   │────│   Python/LangChain │────│   ChromaDB          │
-│   (Port 3000)       │    │   (Port 8000)       │    │   Embeddings        │
-└─────────────────────┘    └─────────────────────┘    └─────────────────────┘
-         │                           │                           │
-         │                           │                           │
-         ▼                           ▼                           ▼
-┌─────────────────────┐    ┌─────────────────────┐    ┌─────────────────────┐
-│   Nginx Proxy       │    │   PostgreSQL        │    │   Redis Cache       │
-│   Load Balancer     │    │   User Data         │    │   Session Storage   │
-│   Static Files      │    │   Metadata          │    │   Performance       │
-└─────────────────────┘    └─────────────────────┘    └─────────────────────┘
+┌─────────────────────┐      ┌─────────────────────┐      ┌─────────────────────┐
+│   React Frontend    │      │   FastAPI Backend   │      │   ChromaDB          │
+│   TypeScript/Vite   │ ────>│   Python/LangChain  │ ────>│   PostgreSQL        │
+│   (Port 3000)       │      │   Embedding         │      │   User Data         │
+└─────────────────────┘      └─────────────────────┘      └─────────────────────┘
+
 ```
 
-### RAG Pipeline
-```
-Document Upload → Text Extraction → Chunking → Embedding Generation → Vector Storage
-                                                                              ↓
-User Query → Query Embedding → Similarity Search → Context Retrieval → LLM Generation → Response
-```
+### RAG Pipeline Architecture
+
+#### 📥 Document Ingestion Pipeline
+![Document Ingestion](docs/images/ingestion-pipeline.png)
+
+#### 🔍 Query & Response Generation Pipeline
+![Query Generation](docs/images/query-pipeline.png)
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 - Python 3.11+
-- Node.js 18+
+- React.js 18+
 - Docker & Docker Compose (recommended)
-- API Key (OpenAI or Hugging Face)
+- API Key (OpenAI or LLAMA)
 
 ### Option 1: Docker Setup (Recommended)
 
