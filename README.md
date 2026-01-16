@@ -1,8 +1,14 @@
+<div align="center">
+    
 # 🤖 RAG Intelligent Chatbot
+
+
+
+</div>
 
 <div align="center">
 
-![RAG Chatbot Banner](docs/images/homepage.png)
+![RAG Chatbot Banner](images/homepage.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
@@ -98,21 +104,20 @@ An enterprise-grade **Retrieval-Augmented Generation (RAG)** chatbot that combin
 
 ## 🏗️ Architecture
 
-### System Overview
+### System  Auth Overview
 
 <div align="center">
-
-![RAG Architecture](docs/images/archetecture.png)
-
+  <img src="images/Auth_fig.png" alt="RAG Architecture" width="700">
 </div>
+
 
 ### RAG Pipeline
 
+
 <div align="center">
-
-![RAG Pipeline](docs/images/rag-pipeline.png)
-
+  <img src="images/rag_shema.png" alt="RAG Architecture" width="700">
 </div>
+
 
 #### 📥 **Document Ingestion Flow**
 
