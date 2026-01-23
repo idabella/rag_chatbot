@@ -107,8 +107,11 @@ An enterprise-grade **Retrieval-Augmented Generation (RAG)** chatbot that combin
 ### System  Auth Overview
 
 <div align="center">
-  <img src="images/Auth_fig.png" alt="RAG Architecture" width="700">
+  <img src="images/Auth_fig.png" alt="RAG Architecture" width="600">
 </div>
+<br>
+<br>
+<br>
 
 
 ### RAG Pipeline
