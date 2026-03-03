@@ -2,7 +2,6 @@
 # 🤖 RAG Intelligent Chatbot
 
 
-
 </div>
 
 <div align="center">
