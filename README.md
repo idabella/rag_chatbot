@@ -1,7 +1,6 @@
 <div align="center"
 # 🤖 RAG Intelligent Chatbot
 </div>
-
 <div align="center">
 
 ![RAG Chatbot Banner](images/homepage.png)
